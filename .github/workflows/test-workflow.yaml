@@ -2,13 +2,13 @@ name: Test Workflow
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronized]
 
 jobs:
   testing-action:
     runs-on: ubuntu-latest
     permissions:
-      isses: write
+      issues: write
       pull-request: write
     steps:
       - name: Checkout Repository
